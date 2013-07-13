@@ -1,0 +1,95 @@
+
+@import "lesshat.less";
+
+
+@blueish: rgb(78, 78, 126);
+@nasa-color1: rgb(107, 129, 175);
+@nasa-color2: rgb(191, 213, 238);
+@nasa-color3: rgb(236, 28, 36);
+
+@text-blue: rgb(25, 52, 142);
+
+@almost-white: rgb(247, 249, 252);
+@light-color: mix(@almost-white, @nasa-color1, 80%);
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, q, strong, dl, dt, dd, ol,
+ul, li, fieldset, form, input, select, textarea, label, legend, table {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    list-style-type: none;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: "Futura", Verdana, Helvetica, sans-serif;
+    vertical-align: baseline;
+}
+
+body {
+    text-align: center;
+    background: @nasa-color2;
+    margin:50px 0px;
+    padding:0px;
+    text-align:center;
+}
+
+.container {
+    text-align: center;
+    color: white;
+    font-weight: none;
+    max-width: 800px;
+    padding: 80px 60px 80px 60px;
+    margin: auto;
+    border: 2px solid @nasa-color2;
+    .gradient(~"linear-gradient(top, rgb(110,132,185), @{nasa-color1})");
+    text-shadow: 0.1em 0.1em 1px rgba(15, 15, 15, 30);
+}
+
+h1 {
+    font-size: 48pt;
+    //text-transform: uppercase;
+    color: white;
+    margin-bottom: 16px;
+    text-shadow: 1px 1px 6px rgba(15, 15, 15, 30);
+}
+
+h2 {
+    font-size: 24pt;
+    //text-transform: uppercase;
+    color: @nasa-color3;
+    margin-bottom: 16px;
+}
+
+
+form {
+    margin-top: 16px;
+}
+
+label {
+    padding: 6px 8px 6px 8px;
+    font-size: 14pt;
+}
+
+input {
+    padding: 6px 8px 6px 8px;
+    font-size: 14pt;
+    border: 1px solid @blueish;
+}
+
+.btn {
+    display: inline-block;
+    background-color: @almost-white;
+    .gradient(~"linear-gradient(top, @{almost-white}, @{light-color})");
+    border: 1px solid @blueish;
+    min-width: 90px;
+    color: white - #111;
+    padding: 9px 8px 7px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: none;
+
+    &:hover {
+        .gradient(~"linear-gradient(bottom, @{almost-white}, @{light-color})");
+    }
+}
