@@ -33,18 +33,6 @@ body {
     text-align:center;
 }
 
-.container {
-    text-align: center;
-    color: white;
-    font-weight: none;
-    max-width: 800px;
-    padding: 80px 60px 80px 60px;
-    margin: auto;
-    border: 2px solid @nasa-color2;
-    .gradient(~"linear-gradient(top, rgb(110,132,185), @{nasa-color1})");
-    text-shadow: 0.1em 0.1em 1px rgba(15, 15, 15, 30);
-}
-
 h1 {
     font-size: 48pt;
     //text-transform: uppercase;
@@ -92,4 +80,27 @@ input {
     &:hover {
         .gradient(~"linear-gradient(bottom, @{almost-white}, @{light-color})");
     }
+}
+
+.login {
+    text-align: center;
+    color: white;
+    font-weight: none;
+    max-width: 800px;
+    padding: 80px 60px 80px 60px;
+    margin: auto;
+    border: 2px solid @nasa-color2;
+    .gradient(~"linear-gradient(top, rgb(110,132,185), @{nasa-color1})");
+    text-shadow: 0.1em 0.1em 1px rgba(15, 15, 15, 30);
+}
+
+.container {
+    margin-left: 60px;
+    margin-right: 60px;
+    text-align: center;
+}
+
+.page-title {
+    text-align: left;
+    font-size: 24pt;
 }
