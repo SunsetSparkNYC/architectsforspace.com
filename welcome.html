@@ -25,9 +25,53 @@
 
     <!-- Content -->
     <div class="container">
-        <h1 class="page-title">Welcome to Architects for Space</h1>
         <div class="content">
-            <p>This is my conteont</p>
+            <h1 class="page-title">Welcome to Architects for Space</h1>
+            <div class="messages">
+                <h2 class="section-title">Messages</h2>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>From</th>
+                            <th>Date</th>
+                            <th>Subject</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr onclick="document.location = './messages/2013-07-11.html';">
+                                <td>Vanessa M.</td>
+                                <td>July 11, 2013</td>
+                                <td>Welcome to NASA!</td>
+                            </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="resources">
+                <h2 class="section-title">Resources</h2>
+                <table>
+                    <tr>
+                        <td><a href="http://apod.nasa.gov/">Picture of the Day</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./mars-map.html">Mars Maps</a></td>
+                    </tr>
+                    <tr>
+                        <form action="http://www.jpl.nasa.gov/cgi-bin/searchjpl.pl" method="get">
+                            <td><label for="q">Jet Propulsion Laboratory</label></td>
+                            <td><input type="text" id="q" size=16 name="q"></input>
+                            <input class="btn" type="submit" value="Search"/>
+                            </td>
+                        </form>
+                    </tr>
+                    <tr>
+                        <form action="https://www.servirglobal.net/Global/SearchResults.aspx" method="get">
+                            <td><label for="Search">SERVIR Global</label></td>
+                            <td><input type="text" id="Search" size=16 name="Search"></input>
+                            <input class="btn" type="submit" value="Search"/></td>
+                        </form>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 
