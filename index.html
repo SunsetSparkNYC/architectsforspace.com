@@ -36,8 +36,6 @@
             <input type="password" id="access_id" size=10></input>
             <input class="btn" type="button" value="Sign On" onClick="
                 var access_id = document.forms[0].access_id.value;
-                console.log('sdddd');
-                console.log(access_id);
                 if (access_id.charAt(0).toLowerCase() == 'x') {
                     access_id = access_id.slice(1, access_id.length);
                     access_id = parseInt(access_id, 10);
@@ -45,7 +43,8 @@
                 else {
                     access_id = 0;
                 }
-                if (access_id >= 400234 &amp;&amp; access_id <= 400245) {
+                console.log(access_id);
+                if (access_id >= 400234 && access_id <= 400245) {
                     window.location.href = 'http://architectsforspace.com/welcome.html';
                 }
                 else {
